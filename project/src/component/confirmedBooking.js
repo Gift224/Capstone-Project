@@ -34,7 +34,7 @@ const ConfirmedBooking = () => {
 
       <div style={{margin: "50px 0px 0px 0px"}}>
         <Link to="/booking">
-        <button>
+        <button aria-label="On Click">
         Make another reservation
         </button>
         </Link>

@@ -50,7 +50,7 @@ function Home (){
                         <h2>Chicago</h2>
                         <div className="pa"> <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist</p></div>
                         <div>
-                            <Link to="/booking"><button>Reserve a Table</button></Link>
+                            <Link to="/booking"><button aria-label="On Click">Reserve a Table</button></Link>
                         </div>
                     </div>
                     <div>

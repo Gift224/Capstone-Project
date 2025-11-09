@@ -100,7 +100,7 @@ function BookingForm (props) {
                 <input id="book-guests" min="1" value={guests.value} onChange={(e) => { setGuests({ ...guests, value: e.target.value }); }} 
                 onBlur={() => { 
                   setGuests({ ...guests, isTouched: true });}} type="number"  required/> 
-                  {guests.isTouched && guests.value.trim() === "" && (
+                  {guests.isTouched && guests.value <= 0 && (
                   <p className="FieldError">Guests should not be empty</p>
                 )}
             </div>
@@ -115,7 +115,7 @@ function BookingForm (props) {
                 </select>
             </div>
             <div className="Field-btn">
-                <button type="submit" disabled={!getIsFormValid()}>
+                <button type="submit" aria-label="On Click" disabled={!getIsFormValid()}>
                   Make Your Reservation
                 </button>
             </div>
