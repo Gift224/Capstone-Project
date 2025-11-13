@@ -30,7 +30,7 @@ function Footer () {
                         <li><Link to="/" >HOME</Link></li>
                         <li><a href="#about" onClick={() => scrollToSection("about")} >ABOUT</a></li>
                         <li><a href="#menu" onClick={() => scrollToSection("menu")} >MENU</a></li>
-                        <li><Link to="/reservation" >RESERVATIONS</Link></li>
+                        <li><Link to="/booking" >RESERVATIONS</Link></li>
                         <li><Link to="/" >LOGIN</Link></li>
                     </ul>
                 </div>
